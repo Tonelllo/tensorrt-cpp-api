@@ -14,10 +14,10 @@ message("TEST " ${CMAKE_SOURCE_DIR})
 
 # TODO: Specify the path to TensorRT root dir
 if (NOT TensorRT_DIR)
-    set(TensorRT_DIR /home/cyrus/work/libs/TensorRT-10.0.0.6/)
+    set(TensorRT_DIR /usr/src/tensorrt)
 endif()
 # Use the correct version of CUDA
-set(CUDA_TOOLKIT_ROOT_DIR /usr/local/cuda)
+set(CUDA_TOOLKIT_ROOT_DIR /usr/local/cuda-12.8)
 
 # We require CUDA, OpenCV, and TensorRT
 find_package(TensorRT REQUIRED)
